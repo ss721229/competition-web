@@ -5,7 +5,7 @@ import time
 from save import save_data_to_database
 
 def scraping_wevity():
-    page_number = 22
+    page_number = 1
     title, url, application_start, application_end = [], [], [], []
 
     while page_number:
