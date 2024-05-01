@@ -51,4 +51,4 @@ def scraping_linkcarrer():
 
 if __name__ == "__main__":
     title, url, application_start, application_end = scraping_linkcarrer()
-    save_data_to_database('링커리어', title, url, application_start, application_end)
+    save_data_to_database('linkcarrer', title, url, application_start, application_end)

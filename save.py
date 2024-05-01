@@ -7,7 +7,7 @@ from datetime import datetime
 from mainpage.models import Competition
 
 def save_data_to_database(platform, title, url, application_start, application_end):
-    if platform == '링커리어':
+    if platform == 'linkcarrer':
         for t, u, start, end in zip(title, url, application_start, application_end):
             Competition.objects.create(
                 platform=platform,
@@ -16,7 +16,7 @@ def save_data_to_database(platform, title, url, application_start, application_e
                 application_start=datetime.strptime(start, "%y.%m.%d").strftime("%Y-%m-%d"),
                 application_end=datetime.strptime(end,"%y.%m.%d").strftime("%Y-%m-%d")
             )
-    elif platform == '위비티':
+    elif platform in ['wevity', 'thinkgood']:
         for t, u, start, end in zip(title, url, application_start, application_end):
             Competition.objects.create(
                 platform=platform,

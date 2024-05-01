@@ -50,4 +50,4 @@ def scraping_wevity():
 
 if __name__ == "__main__":
     title, url, application_start, application_end = scraping_wevity()
-    save_data_to_database('위비티', title, url, application_start, application_end)
+    save_data_to_database('wevity', title, url, application_start, application_end)
