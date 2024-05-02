@@ -1,0 +1,133 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+ul {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#container {
+    width: 1200px;
+    margin: 0 auto;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+#header {
+    height: 150px;
+    width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+#header-title {
+    width: 380px;
+}
+
+#search {
+    height: 150px;
+    width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+#competition-info {
+    width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.info {
+    padding: 20px;
+}
+
+.platform-title {
+    height: 100px;
+    width: 300px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.see-more {
+    text-align: center;
+    padding-right: 10px;
+}
+
+#linkcarrer-title {
+    width: 230px;
+}
+
+#wevity-title {
+    width: 180px;
+}
+
+#thinkgood-title {
+    width: 130px;
+}
+
+#search {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.competition-list {
+    list-style-type: none;
+}
+
+.competition-list li {
+    padding-bottom: 10px;
+}
+
+.competition-list li:hover {
+    background-color: gray;
+}
+
+#recommended-words {
+    list-style: none;
+    padding: 0;
+}
+
+#recommended-words li {
+    display: inline;
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    width: 400px;
+    font-size: 20px;
+}
+
+button[type="submit"] {
+    font-size: 16px;
+}
