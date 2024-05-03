@@ -2,8 +2,6 @@ from bs4 import BeautifulSoup
 import requests
 import time
 
-from save import save_data_to_database
-
 def scraping_wevity():
     page_number = 1
     title, url, application_start, application_end = [], [], [], []
@@ -12,6 +10,7 @@ def scraping_wevity():
         response = requests.get(f"https://www.wevity.com/?c=find&s=1&mode=ing&gp={page_number}")
         soup = BeautifulSoup(response.text, 'html.parser')
         element_tit = soup.find_all(class_="tit")[1:]
+        tmp_urls = []
 
         if len(element_tit) == 0:
             print(f"모든 페이지 스크래핑 완료")
@@ -26,8 +25,9 @@ def scraping_wevity():
                 text += str(element).strip()
             title.append(text)
             url.append('https://www.wevity.com/' + (e.find('a').get('href')))
+            tmp_urls.append('https://www.wevity.com/' + (e.find('a').get('href')))
 
-        for u in url:
+        for u in tmp_urls:
             time.sleep(0.3)
             response = requests.get(u)
             soup = BeautifulSoup(response.text, 'html.parser')
@@ -46,8 +46,3 @@ def scraping_wevity():
         page_number += 1
 
     return title, url, application_start, application_end
-
-
-if __name__ == "__main__":
-    title, url, application_start, application_end = scraping_wevity()
-    save_data_to_database('wevity', title, url, application_start, application_end)

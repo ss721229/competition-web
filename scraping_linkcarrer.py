@@ -4,8 +4,6 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 
-from save import save_data_to_database
-
 def scraping_linkcarrer():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
@@ -24,15 +22,18 @@ def scraping_linkcarrer():
 
         titles = driver.find_elements(By.CLASS_NAME, "activity-title")
         urls = driver.find_elements(By.CLASS_NAME, "image-link")
+        tmp_urls = []
+
         for t in titles:
             title.append(t.text)
         for u in urls:
             href = u.get_attribute("href")
             url.append(href)
+            tmp_urls.append(href)
 
-        for u in url:
+        for u in tmp_urls:
             driver.get(u)
-            driver.implicitly_wait(5)
+            driver.implicitly_wait(10)
             date = driver.find_elements(By.TAG_NAME, "h3")
             if date[3].text != "-":
                 application_start.append(date[3].text.split(' ')[0])
@@ -47,8 +48,3 @@ def scraping_linkcarrer():
     driver.quit()
 
     return title, url, application_start, application_end
-
-
-if __name__ == "__main__":
-    title, url, application_start, application_end = scraping_linkcarrer()
-    save_data_to_database('linkcarrer', title, url, application_start, application_end)

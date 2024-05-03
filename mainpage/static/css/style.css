@@ -106,6 +106,7 @@ ul {
 }
 
 .competition-list li {
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
@@ -130,4 +131,12 @@ input[type="text"] {
 
 button[type="submit"] {
     font-size: 16px;
+}
+
+.title {
+    display: block;
+    width: 280px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

@@ -38,66 +38,16 @@
                         </a>
                     </div>
                     <ul class='competition-list'>
+                        {% for competition in competition_linkcarrer %}
                         <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
+                            <a href="{{ competition.url }}">
+                                <h5 class='title'>{{ competition.title }}</h5>
+                                <span class='application-start'>{{ competition.application_start|date:"Y-m-d" }}</span>
+                                <span> ~ </span>
+                                <span class='application-end'>{{ competition.application_end|date:"Y-m-d" }}</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
+                        {% endfor %}
                     </ul>
                     <div class='see-more'>
                         <a href="/main">
@@ -112,66 +62,16 @@
                         </a>
                     </div>
                     <ul class='competition-list'>
+                        {% for competition in competition_wevity %}
                         <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
+                            <a href="{{ competition.url }}">
+                                <h5 class='title'>{{ competition.title }}</h5>
+                                <span class='application-start'>{{ competition.application_start|date:"Y-m-d" }}</span>
+                                <span> ~ </span>
+                                <span class='application-end'>{{ competition.application_end|date:"Y-m-d" }}</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
+                        {% endfor %}
                     </ul>
                     <div class='see-more'>
                         <a href="/main">
@@ -186,66 +86,16 @@
                         </a>
                     </div>
                     <ul class='competition-list'>
+                        {% for competition in competition_thinkgood %}
                         <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
+                            <a href="{{ competition.url }}">
+                                <h5 class='title'>{{ competition.title }}</h5>
+                                <span class='application-start'>{{ competition.application_start|date:"Y-m-d" }}</span>
+                                <span> ~ </span>
+                                <span class='application-end'>{{ competition.application_end|date:"Y-m-d" }}</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main">
-                                <h5 class='title'>competition title</h5>
-                                <span class='date'>0000-00-00 ~ 0000-00-00</span>
-                            </a>
-                        </li>
+                        {% endfor %}
                     </ul>
                     <div class='see-more'>
                         <a href="/main">

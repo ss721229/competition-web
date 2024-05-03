@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 
-from save import save_data_to_database
+import time
 
 def scraping_thinkgood():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
@@ -41,6 +41,7 @@ def scraping_thinkgood():
             driver.implicitly_wait(3)
             arrow_next_element = driver.find_element(By.CSS_SELECTOR, '#pagination1 > a.next')
             arrow_next_element.click()
+            time.sleep(1)
         except NoSuchElementException:
             print(f"모든 페이지 스크래핑 완료")
             break
@@ -49,8 +50,3 @@ def scraping_thinkgood():
     driver.quit()
 
     return title, url, application_start, application_end
-
-
-if __name__ == "__main__":
-    title, url, application_start, application_end = scraping_thinkgood()
-    save_data_to_database('thinkgood', title, url, application_start, application_end)
