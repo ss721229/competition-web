@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>moremore</title>
+        <link rel="stylesheet" href="{% static 'css/search-style.css' %}">
+    </head>
+    <body>
+        <div id='container'>
+            <div id='header'>
+                <a href="/main">
+                    <img id='header-title' src="{% static 'images/title.PNG' %}">
+                </a>
+            </div>
+            <div id='search'>
+                <div id='input'>
+                    <form action="/main/search" method="GET">
+                        <input type="text" name="q" placeholder="검색어를 입력하세요">
+                        <button type="submit">검색</button>
+                    </form>
+                </div>
+                <div id="recommended-searches">
+                    <ul id="recommended-words">
+                        <li><a href="/main/search?q=데이터">데이터</a></li>
+                        <li><a href="/main/search?q=AI">AI</a></li>
+                        <li><a href="/main/search?q=인공지능">인공지능</a></li>
+                        <li><a href="/main/search?q=해커톤">해커톤</a></li>
+                        <li><a href="/main/search?q=아이디어">아이디어</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id='competition-info'>
+                <h5>"{{ keyword }}" - 검색 결과</h5>
+                <div id='info'>
+                    <ul class='competition-list'>
+                        {% for i in "0123456789" %}
+                        <li>
+                            <a href="">
+                                <h5 class='title'>title</h5>
+                                <span class='application-start'>0000-00-00</span>
+                                <span> ~ </span>
+                                <span class='application-end'>0000-00-00</span>
+                                <br><span>platform</span>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <ul class='competition-list'>
+                        {% for i in "0123456789" %}
+                        <li>
+                            <a href="">
+                                <h5 class='title'>title</h5>
+                                <span class='application-start'>0000-00-00</span>
+                                <span> ~ </span>
+                                <span class='application-end'>0000-00-00</span>
+                                <br><span>platform</span>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="en">
+<html lang="ko">
     <head>
         <meta charset="utf-8">
         <title>moremore</title>
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/index-style.css' %}">
     </head>
     <body>
         <div id='container'>
@@ -15,23 +15,23 @@
             </div>
             <div id='search'>
                 <div id='input'>
-                    <form action="/main" method="GET">
+                    <form action="/main/search" method="GET">
                         <input type="text" name="q" placeholder="검색어를 입력하세요">
                         <button type="submit">검색</button>
                     </form>
                 </div>
                 <div id="recommended-searches">
                     <ul id="recommended-words">
-                        <li><a href="/main?q=검색어1">검색어1</a></li>
-                        <li><a href="/main?q=검색어2">검색어2</a></li>
-                        <li><a href="/main?q=검색어3">검색어3</a></li>
-                        <li><a href="/main?q=검색어4">검색어4</a></li>
-                        <li><a href="/main?q=검색어5">검색어5</a></li>
+                        <li><a href="/main/search?q=데이터">데이터</a></li>
+                        <li><a href="/main/search?q=AI">AI</a></li>
+                        <li><a href="/main/search?q=인공지능">인공지능</a></li>
+                        <li><a href="/main/search?q=해커톤">해커톤</a></li>
+                        <li><a href="/main/search?q=아이디어">아이디어</a></li>
                     </ul>
                 </div>
             </div>
             <div id='competition-info'>
-                <div id='linkcarrer-info' class='info'>
+                <div class='info'>
                     <div class='platform-title'>
                         <a href="/main">
                             <img id='linkcarrer-title' src="{% static 'images/linkcarrer.PNG' %}">
@@ -50,12 +50,12 @@
                         {% endfor %}
                     </ul>
                     <div class='see-more'>
-                        <a href="/main">
+                        <a href="https://linkareer.com/list/contest">
                             더보기
                         </a>
                     </div>
                 </div>
-                <div id='wevity-info' class='info'>
+                <div class='info'>
                     <div class='platform-title'>
                         <a href="/main">
                             <img id='wevity-title' src="{% static 'images/wevity.PNG' %}">
@@ -74,12 +74,12 @@
                         {% endfor %}
                     </ul>
                     <div class='see-more'>
-                        <a href="/main">
+                        <a href="https://www.wevity.com/?c=find&s=1&gub=&cidx=&sp=&sw=&gbn=list&mode=ing">
                             더보기
                         </a>
                     </div>
                 </div>
-                <div id='thinkgood-info' class='info'>
+                <div class='info'>
                     <div class='platform-title'>
                         <a href="/main">
                             <img id='thinkgood-title' src="{% static 'images/thinkgood.PNG' %}">
@@ -98,7 +98,7 @@
                         {% endfor %}
                     </ul>
                     <div class='see-more'>
-                        <a href="/main">
+                        <a href="https://www.thinkcontest.com/thinkgood/user/contest/index.do#PxyyoRLHIcgvNg6HiHNz_uA4QOthhmxuMkOJ-8OGsYHuum-XS7oXTXHj_WQpSdho7EnVynWoiuBwl84H1ChINGL0PwCVS2cspmoqCGi-qpZY6T5M_ZxBwx9fWgmwB-cK">
                             더보기
                         </a>
                     </div>

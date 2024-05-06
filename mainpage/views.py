@@ -13,3 +13,10 @@ def index(request):
         'competition_thinkgood': competition_thinkgood
     }
     return render(request, 'mainpage/index.html', context)
+
+def search(request):
+    keyword = request.GET.get('q')
+    context = {
+        'keyword': keyword,
+    }
+    return render(request, 'mainpage/search.html', context)
