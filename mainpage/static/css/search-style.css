@@ -18,9 +18,6 @@ ul {
     width: 1200px;
     margin: 0 auto;
     padding: 20px;
-
-    box-sizing: border-box;
-    border: 1px solid #ccc;
 }
 
 #header {
@@ -30,9 +27,6 @@ ul {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-
-    box-sizing: border-box;
-    border: 1px solid #ccc;
 }
 
 #header-title {
@@ -46,9 +40,6 @@ ul {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-
-    box-sizing: border-box;
-    border: 1px solid #ccc;
 }
 
 #competition-info {

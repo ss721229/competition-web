@@ -60,7 +60,7 @@ def save_csv_to_database(csv_file):
                 title = row[1]
                 url = row[2]
                 application_start = datetime.strptime(row[3], "%Y-%m-%d")
-                application_end = datetime.strptime(row[4], "%Y-%m-%d")
+                application_end = datetime.strptime(row[4], "%Y-%m-%d") if row[4].replace('-', '').isdigit() else datetime.strptime("9999-12-31", "%Y-%m-%d")
                 Competition.objects.create(platform=platform, title=title, url=url, application_start=application_start, application_end=application_end)
 
 if __name__ == "__main__":
