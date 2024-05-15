@@ -48,6 +48,8 @@ python manage.py runserver
 - <a href="https://sanseo.tistory.com/89">공모전 크롤링 - 중간점검</a>
 - <a href="https://sanseo.tistory.com/95">공모전 크롤링 (10) - 세부 페이지(검색 기능, 페이지네이션)</a>
 - <a href="https://sanseo.tistory.com/96">공모전 크롤링 (11) - 데이터 스크래핑, 디자인 마무리</a>
+- <a href="https://sanseo.tistory.com/97">공모전 크롤링 - 회고</a>
+
 
 ## &nbsp;&nbsp;&nbsp;Good
 - 세 개의 페이지를 따로 봐야하는 불편함을 없애고, 하나의 페이지에서 확인할 수 있다.
