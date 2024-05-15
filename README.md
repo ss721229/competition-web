@@ -31,11 +31,9 @@ python save.py
 ```shell
 python manage.py runserver
 ```
+
 ## &nbsp;&nbsp;&nbsp;Example
-- **메인 페이지** : 공모전 데이터 표시, 검색 기능/추천 검색어 제공
-![image](https://github.com/ss721229/competition-web/assets/53392184/634d46c1-39ad-447f-ab83-7f6f7b4a073c)
-- **세부 페이지** : 검색어가 포함된 공모전 제공
-![image](https://github.com/ss721229/competition-web/assets/53392184/f6da08cc-92bb-48d1-a976-52c2b3e9622a)
+![moremore-Chrome-2024-05-15-09-30-05](https://github.com/ss721229/competition-web/assets/53392184/132e8a1d-980b-45b0-8a67-bbe80677ce58)
 
 ## &nbsp;&nbsp;&nbsp;Process
 - <a href="https://sanseo.tistory.com/66">공모전 크롤링 (1) - 계획서</a>
